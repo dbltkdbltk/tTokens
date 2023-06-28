@@ -1,0 +1,125 @@
+﻿
+html {
+  background-color: #15202b;
+  margin: 0;
+}
+
+body {
+  background-color: #1c384a;
+  height: 100vh;
+  width: 40%;
+  margin: 0 40% 0 20%;
+  box-sizing: border-box;
+  color: #768c9e;
+  display: block;
+}
+
+#pageHeader {
+  width: 100%;
+  margin: 0;
+  padding: .7rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  border-bottom: .05rem solid #15202b;
+  position: relative;
+}
+
+#pageHeader > a {
+  position: absolute;
+  top: 0; right: 0.4rem;
+  background-color: inherit;
+  font-size: inherit;
+  color: #434d5a;
+  border: none;
+  text-decoration: none;
+}
+
+#pageHeader > a:hover {
+  color: #ffffff;
+}
+
+#pageBody {
+  position: relative;
+}
+
+#pageBody input {
+  width: 75%;
+  margin: .7rem auto;
+  display: block;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  background-color: #15202b;
+  color: #768c9e;
+  border: none;
+  padding: 0.4rem;
+  text-align: center;
+}
+#pageBody input:focus {
+  background-color: #000000;
+  color: #ffffff;
+  outline: none;
+}
+#pageBody input:invalid {
+  outline: red solid .05rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+#pageBody label {
+  text-align: center;
+  color: #768c9e;
+  margin-top: 1.8rem;
+  display: block;
+  font-size: 1.3rem;
+}
+
+#pageBody #button_input {
+  display: block;
+  width: 75%;
+  margin-top: 3.4rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.5rem;
+  background-color: #15202b;
+  color: #768c9e;
+  border: none;
+  padding: 0.4rem;
+}
+#pageBody #button_input:hover {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+#informScreen {
+  visibility: hidden;
+  position: absolute;
+  left: 0; right: 0; top: 0; bottom: 0;
+  box-sizing: border-box;
+  margin: 0 5%;
+  padding: 5%;
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: #1c384a;
+  border: .05rem solid;
+  border-radius: 2rem;
+}
+#informScreen #button_info {
+  dispaly: block;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+  font-size: 1.5rem;
+  color: inherit;
+  background-color: inherit;
+  border: .05rem solid;
+  border-radius: 2rem;
+}
+#informScreen #button_info:hover {
+  background-color: green;
+  color: #ffffff;
+  border: none;
+}

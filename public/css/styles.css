@@ -1,0 +1,158 @@
+﻿
+html, body {
+  background-color: #15202b;
+  margin: 0;
+}
+
+#homePage {
+  background-color: #1c384a;
+  height: 100vh;
+  width: 40%;
+  margin: 0 40% 0 20%;
+  font-size: 1rem;
+  box-sizing: border-box;
+  color: #768c9e;
+}
+
+.homePageHeader {
+  width: 100%;
+  margin: 0;
+  padding: .7rem;
+  text-align: center;
+  box-sizing: inherit;
+  font-size: 1.5rem;
+  position: relative;
+  border-bottom: .05rem solid #15202b;
+}
+.homePageHeader > button {
+  display: none;
+  background-color: inherit;
+  font-size: .7rem;
+  color: #ffffff;
+  border: none;
+  position: absolute;
+  top: 0; right: 0;
+}
+.homePageLog {
+  background-color: #172e3c;
+  font-size: 1rem;
+  text-align: left;
+}
+.homePageHeader.homePageLog > button {
+  display: block;
+}
+.homePageHeader.homePageLog > button:hover {
+  background-color: #000000;
+}
+
+#homePageBody {
+  width: 100%;
+  height: 55%;
+  box-sizing: inherit;
+  position: relative;
+}
+
+.homePageTotalAmount {
+  background-color: #1f2936;
+  width: 75%;
+  margin: .7rem auto;
+  padding: .7rem;
+  text-align: center;
+  box-sizing: inherit;
+  font-size: 1.2rem;
+  color: #434d5a;
+  border-radius: 2rem;
+}
+.homePageTotalAmount:hover {
+  color: inherit;
+  background-color: #15202b;
+  border: none;
+}
+.homePageTotalAmountDisclose {
+  background-color: inherit;
+  border: .05rem solid;
+  color: inherit;
+}
+.homePageTotalAmountDisclose > span,
+#requestConfirm > div > span {
+  color: #434d5a;
+}
+.homePageTotalAmount > a:active,
+.homePageTotalAmount > a:hover,
+.homePageTotalAmount > a {
+  text-decoration: none;
+  color: inherit;
+}
+#requestConfirm, #waitingScreen {
+  visibility: hidden;
+  background-color: #15202b;
+  box-sizing: inherit;
+  padding: 5%;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  left: 0.3rem; right: 0.3rem; top: 0; bottom: 0;
+}
+#requestConfirm > div::first-line {
+  font-size: 1.6rem;
+}
+#requestConfirm > button {
+  box-sizing: inherit;
+  width: 25%;
+  height: 15%;
+  margin: 5%;
+  border: none;
+  font-size: 1.5rem;
+  color: #ffffff;
+  opacity: .5;
+}
+#requestConfirm > button:nth-child(2) {
+  background-color: #048040;
+}
+#requestConfirm > button:nth-child(3) {
+  background-color: #80000d;
+}
+#requestConfirm > button:hover {
+  opacity: 1;
+}
+#waitingScreen {
+  visibility: hidden;
+  font-size: 2rem;
+  color: #768c9e;
+  padding-top: 40%;
+  background-color: #1c384a;
+}
+.homePageButtons {
+  width: 95%;
+  box-sizing: inherit;
+  margin: 1.5rem auto;
+  display: flex;
+}
+.homePageButtons > span {
+  width: 30%;
+  height: auto;
+  box-sizing: inherit;
+  padding: .7rem 0;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #434d5a;
+  background-color: inherit;
+  border: .05rem solid;
+}
+.homePageButtons > span:hover {
+  color: #768c9e;
+  background-color: #0e1621;
+  border: none;
+}
+.homePageButtons > span > a:active,
+.homePageButtons > span > a:hover,
+.homePageButtons > span > a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.homePageButtons > #blank_btn {
+  visibility: hidden;
+}

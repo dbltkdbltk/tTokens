@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>tTokens</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="css/transfer_request.css">
+  <script src="js/transfer_request.js"></script>
+  <script>{Object}</script>
+</head>
+<body>
+  <div id="pageHeader">
+    <div></div>
+    <a>&#10006</a>
+  </div>
+  <div id="pageBody">
+    <div id="inputBlock">
+      <label for="amount_input">Сумма перевода:</label>
+      <input type="number" min=0.01 step=0.01 id="amount_input">
+      <label for="invoice_input">Назначение перевода:</label>
+      <input type="text" id="invoice_input">
+      <button type="button" id="button_input">Ok</button>
+    </div>
+    <div id="informScreen">
+      <div></div>
+      <button type="button" id="button_info">&#10004</button>
+    </div>
+  </div>
+</body>
+</html>

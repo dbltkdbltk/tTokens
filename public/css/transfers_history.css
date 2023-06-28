@@ -1,0 +1,114 @@
+﻿
+html {
+  background-color: #15202b;
+  margin: 0;
+}
+
+body {
+  background-color: #1c384a;
+  height: 100vh;
+  width: 40%;
+  margin: 0 40% 0 20%;
+  box-sizing: border-box;
+  color: #768c9e;
+  display: block;
+}
+
+#pageHeader {
+  width: 100%;
+  margin: 0;
+  padding: .7rem;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+  border-bottom: .05rem solid #15202b;
+  position: relative;
+}
+
+#pageHeader > a {
+  position: absolute;
+  top: 0; right: 0.4rem;
+  background-color: inherit;
+  font-size: inherit;
+  color: #434d5a;
+  border: none;
+  text-decoration: none;
+}
+
+#pageHeader > a:hover {
+  color: #ffffff;
+}
+
+#pageBody {
+  height: 90%;
+  width: 100%;
+  overflow: auto; 
+  position: relative;
+}
+
+#pageBody::-webkit-scrollbar {
+  background-color: inherit;
+}
+#pageBody::-webkit-scrollbar-thumb {
+  background-color: #172e3c;
+}
+
+#pageBody > div {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 1rem;
+  border-bottom: .05rem solid #172e3c; 
+  display: flex;
+  position: relative;
+}
+#pageBody > div > span {
+  padding: .2rem;
+}
+#direction {
+  width: 5%;
+  text-align: center;
+  font-size: 1.2rem;
+}
+#direction[class="received"] {
+  color: green;
+}
+#direction[class="sent"] {
+  color: red;
+}
+#direction[class="unknown"] {
+  color: yellow;
+}
+#time {
+  width: 30%;
+  text-align: center;
+}
+#invoice {
+  width: 35%;
+  text-align: left;
+}
+#amount {
+  width: 30%;
+  text-align: right;
+}
+#amount > span {
+  color: #434d5a;
+}
+#pageBody > div:hover {
+  background-color: #15202b;
+}
+#pageBody > div:hover::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 10%; bottom: 105%;
+  background-color: #15202b;
+  padding: .4rem;
+  font-size: .9rem;
+  z-index: 1;
+}
+#pageBody > div:first-child:hover::after {
+  top: 105%; bottom: auto;
+}
+
+#pageBody > div:active {
+  background-color: #000000;
+}
